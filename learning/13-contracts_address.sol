@@ -37,7 +37,7 @@ contract Deposit{
         owner = msg.sender;
     }
 
-    //A contract can receive ETH only if there's a payable function. 
+    //A contract can receive ETH only if there's a payable function[receive() or fallback()]
     receive() external payable{
     }
 
